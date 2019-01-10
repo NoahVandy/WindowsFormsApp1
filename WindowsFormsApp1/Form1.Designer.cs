@@ -37,15 +37,17 @@
             this.button1.BackColor = System.Drawing.SystemColors.Highlight;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(138, 268);
+            this.button1.Location = new System.Drawing.Point(161, 267);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 73);
             this.button1.TabIndex = 0;
-            this.button1.Text = "View";
+            this.button1.Text = "Blue";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.button2.BackColor = System.Drawing.Color.Red;
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9.900001F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -53,7 +55,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 73);
             this.button2.TabIndex = 1;
-            this.button2.Text = "View";
+            this.button2.Text = "Red";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -66,6 +68,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Click += new System.EventHandler(this.Form1_Click);
             this.ResumeLayout(false);
 
         }
